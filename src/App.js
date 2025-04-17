@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Pricing from './pages/Pricing';
 import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
+import FloatingTwitterButton from './components/FloatingTwitterButton';
 
 const Navbar = () => (
   <div style={{
@@ -34,6 +35,7 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
+      <FloatingTwitterButton />
     </Router>
   );
 }
