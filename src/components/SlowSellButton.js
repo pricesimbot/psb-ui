@@ -4,24 +4,24 @@ import React, { useState } from 'react';
 const SlowSellButton = () => {
   const [hover, setHover] = useState(false);
 
-  const buttonStyle = {{
+  const style = {
     backgroundColor: '#0d1117',
-    border: '2px solid #00ff99',
+    border: '2px solid #ffaa00',
     borderRadius: '8px',
-    color: '#00ff99',
+    color: '#ffaa00',
     padding: '12px 24px',
     margin: '10px',
     fontSize: '16px',
     fontWeight: 'bold',
     cursor: 'pointer',
     transition: 'all 0.3s ease-in-out',
-    boxShadow: hover ? '0 0 15px #00ffaa99' : '0 0 10px #00ff9977',
+    boxShadow: hover ? '0 0 15px #ffaa0099' : '0 0 10px #ffaa0077',
     outline: 'none',
-  }};
+  };
 
   return (
     <button
-      style={buttonStyle}
+      style={style}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
