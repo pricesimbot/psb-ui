@@ -3,20 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Pricing from './pages/Pricing';
 import Dashboard from './pages/Dashboard';
-
-const Home = () => (
-  <div style={{
-    backgroundColor: '#0d1117',
-    color: '#f0f6fc',
-    minHeight: '100vh',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontSize: '24px'
-  }}>
-    Welcome to Price Simulator Bot
-  </div>
-);
+import Home from './pages/Home';
 
 const Navbar = () => (
   <div style={{
