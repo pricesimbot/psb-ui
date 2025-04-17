@@ -4,6 +4,7 @@ import BullRunButton from '../components/BullRunButton';
 import RealisticPriceActionButton from '../components/RealisticPriceActionButton';
 import DumpButton from '../components/DumpButton';
 import SlowSellButton from '../components/SlowSellButton';
+import WalletTracker from '../components/WalletTracker';
 
 const Dashboard = () => {
   const containerStyle = {
@@ -35,6 +36,7 @@ const Dashboard = () => {
   return (
     <div style={containerStyle}>
       <h1 style={titleStyle}>Price Simulator Dashboard</h1>
+      <WalletTracker />
       <div style={buttonContainer}>
         <BullRunButton />
         <RealisticPriceActionButton />
