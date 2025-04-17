@@ -5,6 +5,7 @@ import RealisticPriceActionButton from '../components/RealisticPriceActionButton
 import DumpButton from '../components/DumpButton';
 import SlowSellButton from '../components/SlowSellButton';
 import WalletTracker from '../components/WalletTracker';
+import ChartSimulator from '../components/ChartSimulator';
 
 const Dashboard = () => {
   const containerStyle = {
@@ -43,6 +44,7 @@ const Dashboard = () => {
         <DumpButton />
         <SlowSellButton />
       </div>
+      <ChartSimulator />
     </div>
   );
 };
