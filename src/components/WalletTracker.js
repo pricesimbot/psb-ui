@@ -1,0 +1,1 @@
+const WalletTracker = () => <div>Total Wallet Investment Tracker</div>; export default WalletTracker;

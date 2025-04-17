@@ -1,0 +1,1 @@
+import React from 'react'; const Dashboard = () => <div>Price Simulator Dashboard</div>; export default Dashboard;

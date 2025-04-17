@@ -1,0 +1,1 @@
+const DumpButton = () => <button>Dump</button>; export default DumpButton;

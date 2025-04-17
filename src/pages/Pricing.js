@@ -1,0 +1,1 @@
+const Pricing = () => <div>Pricing Plans Here</div>; export default Pricing;

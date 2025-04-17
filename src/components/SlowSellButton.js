@@ -1,0 +1,1 @@
+const SlowSellButton = () => <button>Slow Sell</button>; export default SlowSellButton;

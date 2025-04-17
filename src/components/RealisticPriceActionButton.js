@@ -1,0 +1,1 @@
+const RealisticPriceActionButton = () => <button>Realistic Price Action</button>; export default RealisticPriceActionButton;

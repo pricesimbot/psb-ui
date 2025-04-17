@@ -1,0 +1,1 @@
+const FloatingTwitterButton = () => <button style={{position: 'fixed', bottom: 20, right: 20}}>Twitter</button>; export default FloatingTwitterButton;

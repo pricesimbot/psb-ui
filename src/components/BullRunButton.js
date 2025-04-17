@@ -1,0 +1,1 @@
+const BullRunButton = () => <button>Bull Run</button>; export default BullRunButton;
