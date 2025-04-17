@@ -14,6 +14,10 @@ const Dashboard = () => {
     minHeight: '100vh',
     padding: '40px 20px',
     fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
   };
 
   const titleStyle = {
@@ -23,17 +27,41 @@ const Dashboard = () => {
     textAlign: 'center',
   };
 
-  const buttonContainerStyle = {
-    display: 'flex',
-    gap: '15px',
-    justifyContent: 'center',
-    flexWrap: 'wrap',
-    marginTop: '30px',
+  const buttonStyle = {
+    backgroundColor: '#161b22',
+    border: '1px solid #58a6ff',
+    borderRadius: '8px',
+    color: '#58a6ff',
+    padding: '10px 16px',
+    margin: '6px',
+    cursor: 'pointer',
+    fontSize: '16px',
+    transition: '0.2s',
+    boxShadow: '0 0 8px #58a6ff55',
   };
 
-  const poweredByStyle = {
+  const buttonContainerStyle = {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    marginTop: '20px',
+  };
+
+  const walletTrackerBox = {
+    border: '1px solid #30363d',
+    borderRadius: '10px',
+    padding: '15px 20px',
+    backgroundColor: '#161b22',
+    boxShadow: '0 0 10px #1f6feb55',
+    fontSize: '18px',
+    marginBottom: '30px',
+    width: '100%',
+    maxWidth: '400px',
     textAlign: 'center',
-    marginTop: '60px',
+  };
+
+  const footerStyle = {
+    marginTop: '40px',
     fontSize: '14px',
     color: '#8b949e',
   };
@@ -41,15 +69,17 @@ const Dashboard = () => {
   return (
     <div style={containerStyle}>
       <h1 style={titleStyle}>Price Simulator Dashboard</h1>
-      <WalletTracker />
+      <div style={walletTrackerBox}>
+        <WalletTracker />
+      </div>
       <div style={buttonContainerStyle}>
-        <BullRunButton />
-        <RealisticPriceActionButton />
-        <DumpButton />
-        <SlowSellButton />
+        <div style={buttonStyle}><BullRunButton /></div>
+        <div style={buttonStyle}><RealisticPriceActionButton /></div>
+        <div style={buttonStyle}><DumpButton /></div>
+        <div style={buttonStyle}><SlowSellButton /></div>
       </div>
       <FloatingTwitterButton />
-      <div style={poweredByStyle}>Powered by pricesimbot.sol</div>
+      <div style={footerStyle}>Powered by pricesimbot.sol</div>
     </div>
   );
 };
