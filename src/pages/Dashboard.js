@@ -4,8 +4,6 @@ import BullRunButton from '../components/BullRunButton';
 import RealisticPriceActionButton from '../components/RealisticPriceActionButton';
 import DumpButton from '../components/DumpButton';
 import SlowSellButton from '../components/SlowSellButton';
-import WalletTracker from '../components/WalletTracker';
-import FloatingTwitterButton from '../components/FloatingTwitterButton';
 
 const Dashboard = () => {
   const containerStyle = {
@@ -17,69 +15,32 @@ const Dashboard = () => {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center',
   };
 
   const titleStyle = {
-    fontSize: '36px',
+    fontSize: '32px',
     fontWeight: 'bold',
-    marginBottom: '20px',
+    marginBottom: '30px',
     textAlign: 'center',
   };
 
-  const buttonStyle = {
-    backgroundColor: '#161b22',
-    border: '1px solid #58a6ff',
-    borderRadius: '8px',
-    color: '#58a6ff',
-    padding: '10px 16px',
-    margin: '6px',
-    cursor: 'pointer',
-    fontSize: '16px',
-    transition: '0.2s',
-    boxShadow: '0 0 8px #58a6ff55',
-  };
-
-  const buttonContainerStyle = {
+  const buttonContainer = {
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'center',
+    gap: '15px',
     marginTop: '20px',
-  };
-
-  const walletTrackerBox = {
-    border: '1px solid #30363d',
-    borderRadius: '10px',
-    padding: '15px 20px',
-    backgroundColor: '#161b22',
-    boxShadow: '0 0 10px #1f6feb55',
-    fontSize: '18px',
-    marginBottom: '30px',
-    width: '100%',
-    maxWidth: '400px',
-    textAlign: 'center',
-  };
-
-  const footerStyle = {
-    marginTop: '40px',
-    fontSize: '14px',
-    color: '#8b949e',
   };
 
   return (
     <div style={containerStyle}>
       <h1 style={titleStyle}>Price Simulator Dashboard</h1>
-      <div style={walletTrackerBox}>
-        <WalletTracker />
+      <div style={buttonContainer}>
+        <BullRunButton />
+        <RealisticPriceActionButton />
+        <DumpButton />
+        <SlowSellButton />
       </div>
-      <div style={buttonContainerStyle}>
-        <div style={buttonStyle}><BullRunButton /></div>
-        <div style={buttonStyle}><RealisticPriceActionButton /></div>
-        <div style={buttonStyle}><DumpButton /></div>
-        <div style={buttonStyle}><SlowSellButton /></div>
-      </div>
-      <FloatingTwitterButton />
-      <div style={footerStyle}>Powered by pricesimbot.sol</div>
     </div>
   );
 };

@@ -2,6 +2,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Pricing from './pages/Pricing';
+import Dashboard from './pages/Dashboard';
 
 const Home = () => (
   <div style={{
@@ -32,6 +33,7 @@ const Navbar = () => (
     <div style={{ display: 'flex', gap: '20px' }}>
       <Link to="/" style={{ color: '#f0f6fc', textDecoration: 'none' }}>Home</Link>
       <Link to="/pricing" style={{ color: '#f0f6fc', textDecoration: 'none' }}>Pricing</Link>
+      <Link to="/dashboard" style={{ color: '#f0f6fc', textDecoration: 'none' }}>Dashboard</Link>
     </div>
   </div>
 );
@@ -43,6 +45,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
   );
