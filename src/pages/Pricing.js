@@ -86,19 +86,19 @@ const Pricing = () => {
         <div style={cardStyle}>
           <h3>Trial</h3>
           <p>0.3 SOL</p>
-          <p>Access to 25 wallets</p>
+          <p>24-hour access to up to 500 wallets</p>
           <button style={buttonStyle} onClick={() => sendSol(0.3)}>Pay with Wallet</button>
         </div>
         <div style={cardStyle}>
           <h3>Monthly</h3>
           <p>1 SOL/month</p>
-          <p>Access to 100 wallets</p>
+          <p>Access to 500 wallets</p>
           <button style={buttonStyle} onClick={() => sendSol(1)}>Pay with Wallet</button>
         </div>
         <div style={cardStyle}>
           <h3>Enterprise</h3>
           <p>3 SOL/month</p>
-          <p>Access to 250 wallets</p>
+          <p>Unlimited wallet access</p>
           <button style={buttonStyle} onClick={() => sendSol(3)}>Pay with Wallet</button>
         </div>
       </div>
